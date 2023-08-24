@@ -13,7 +13,6 @@
 买家再次发起退款消息消息触发 | RefundAgainMsg | 买家再次发起退款消息消息触发
 买家退货给卖家消息触发 | RefundBuyerReturnGoodsMsg | 买家退货给卖家消息触发
 买家取消退款消息触发 | RefundClosedMsg | 买家取消退款消息触发
-卖家同意退款退货 | TradeRefundSellerAgreeReturnGoodsMsg | 卖家同意退款退货
 
 ### 场景流程模板配置
 - 模板ID：OrderRefundStatusNotifyRouteTemplate

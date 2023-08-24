@@ -9,7 +9,7 @@
 
 名称 | 标识 | 描述详情
 ---|---|---
-积分查询接口调用 | PointReverseQueryRest | 积分查询接口调用
+积分查询日志接口调用 | PointReverseQueryLogRest | 积分查询日志接口调用
 
 ### 场景流程模板配置
 - 模板ID：PointReverseQueryLogTemplate
