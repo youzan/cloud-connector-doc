@@ -1,0 +1,9 @@
+GuideRelationChange,导购客户关系变更
+GuideRelationDataConsistencyProcess,导购客户关系初始化对齐
+OuterGuideRelationChange,外部导购客户关系变更
+GuideRelationForAccountOpeningChange,开卡导购客户关系变更
+GuideInfoUpdate,导购档案更新
+GuideInfoSyncRelationDataProcess,导购关联数据处理
+GuideInfoDataConsistencyProcess,导购档案初始化对齐
+OuterGuideInfoUpdate,外部导购档案更新
+OuterGuideInfoQuery,导购档案查询

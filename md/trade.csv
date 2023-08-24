@@ -1,0 +1,16 @@
+OrderPush,推送订单
+OrderChangedNotify,订单状态修改通知推送
+OrderRefundPush,退款单推送
+CrmOrderPush,CRM外部订单创建
+CrmOrderRefund,CRM外部维权单创建
+CrmOrderExchange,CRM外部换货
+CrmOrderUnequalExchange,CRM外部单非等价换货
+OrderRefundChangedNotify,退款单状态修改通知推送
+OrderRefundOuterAgree,退款单外部同意
+OrderRefundOuterRefuse,退款单外部拒绝
+OrderRefundSellerActive,三方主动退款
+OrderShipReverse,外部订单发货同步有赞
+OrderSelfFetchReverse,订单自提同步有赞
+OrderLogisticsReverse,订单同城配送同步有赞
+OrderLogisticsStatusReverse,订单同城配送状态同步有赞
+OrderQueryReverse,外部订单详情查询
