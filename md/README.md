@@ -120,6 +120,24 @@
 
 * [等级重算](LevelRecalculate.md)
 
+* [会员正向手机号注销](MemberLogout.md)
+
+* [会员逆向换绑](MemberReverseRebind.md)
+
+* [会员逆向手机号注销](MemberReverseLogout.md)
+
+* [会员换绑后资产合并](MemberMergeProperty.md)
+
+* [积分回滚](PointRollback.md)
+
+* [会员逆向换绑后资产合并](MemberReverseMergeProperty.md)
+
+* [积分修改（消息触发）](PointUpdate.md)
+
+* [积分正向过期](PointExpired.md)
+
+* [积分逆向过期](PointReverseExpired.md)
+
 ### guide
 * [导购客户关系变更](GuideRelationChange.md)
 

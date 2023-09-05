@@ -41,3 +41,12 @@ GrowthReverseGet,成长值逆向查询
 GrowthReverseIncrease,成长值逆向增加
 GrowthReverseDecrease,成长值逆向减少
 LevelRecalculate,等级重算
+MemberLogout,会员正向手机号注销
+MemberReverseRebind,会员逆向换绑
+MemberReverseLogout,会员逆向手机号注销
+MemberMergeProperty,会员换绑后资产合并
+PointRollback,积分回滚
+MemberReverseMergeProperty,会员逆向换绑后资产合并
+PointUpdate,积分修改（消息触发）
+PointExpired,积分正向过期
+PointReverseExpired,积分逆向过期

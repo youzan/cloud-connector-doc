@@ -90,11 +90,11 @@ none | 无业务逻辑处理
 ##### guideMapping
 > 
 
-**默认值**: bean:userMappingProviderImpl?method=byYzUser
+**默认值**: bean:guideMappingProviderImpl?method=findValidByYzGuide
 
 已支持的参数值 | 值含义说明
 ---|---
-bean:userMappingProviderImpl?method=byYzUser | 
+bean:guideMappingProviderImpl?method=findValidByYzGuide | 
 
 **是否允许自定义实现**: Y
 

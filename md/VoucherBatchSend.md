@@ -91,4 +91,21 @@ false |
 
 **是否允许自定义实现**: Y
 
+---
+##### tripartiteVoucherRecycleUri
+> 
+
+**默认值**: bean:emptyProducer?method=process
+
+已支持的参数值 | 值含义说明
+---|---
+bean:emptyProducer?method=process | 无回收处理逻辑
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+发券接口超时后的券回收节点，此时没有三方券id
+```
 

@@ -11,6 +11,7 @@
 ---|---|---
 会员更新 | MemberUpdateExt | 会员更新
 客户更新 | CustomerUpdateExt | 客户更新
+客户变更消息 | CustomerUpdateMsg | 客户变更消息
 
 ### 场景流程模板配置
 - 模板ID：MemberOrCustomerUpdateRouteTemplate

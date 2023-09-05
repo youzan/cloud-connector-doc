@@ -9,7 +9,7 @@
 
 名称 | 标识 | 描述详情
 ---|---|---
-等级重算扩展点 | LevelRecalculateExt | 等级重算（实现后，有赞的等级重算将会失效）
+等级重算扩展点 | RecalculateLevelExt | 等级重算（实现后，有赞的等级重算将会失效）
 
 ### 场景流程模板配置
 - 模板ID：LevelRecalculateRouteTemplate

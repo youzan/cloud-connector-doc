@@ -55,4 +55,18 @@ bean:emptyProducer?method=process | 无业务处理逻辑
 
 **是否允许自定义实现**: Y
 
+---
+##### isSetOutOpenIdAsStaffNoRule
+> 
+
+**默认值**: disable
+
+已支持的参数值 | 值含义说明
+---|---
+disable | 不打通
+enable | 打通
+是否兜底设置outOpenId为员工编码
+
+**是否允许自定义实现**: Y
+
 
