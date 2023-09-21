@@ -1,2 +1,3 @@
 StockPullFromTripartite,定时任务拉取三方库存同步
-StockSync,库存同步
+StockSync,同步商品库存到有赞
+StockSyncOutbound,库存同步(正向)

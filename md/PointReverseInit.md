@@ -51,8 +51,11 @@ PointReverseInitTemplateYzTemplate-alpha |
 ##### tripartiteGetPointUri
 > 外部三方根据标准交换实体"查询用户积分"的子流程模板EndpointUri或模板ID
 
-**参数为必填项**
+**默认值**: bean:emptyProducer?method=process
 
+已支持的参数值 | 值含义说明
+---|---
+bean:emptyProducer?method=process | 
 
 **是否允许自定义实现**: Y
 

@@ -160,16 +160,20 @@
 ### stock
 * [定时任务拉取三方库存同步](StockPullFromTripartite.md)
 
-* [库存同步](StockSync.md)
+* [同步商品库存到有赞](StockSync.md)
+
+* [库存同步(正向)](StockSyncOutbound.md)
 
 ### item
-* [商品创建上行](OutItemCreate.md)
-
-* [商品更新上行](OutItemUpdate.md)
+* [商品删除](ItemDelete.md)
 
 * [商品同步上行](OutItemSync.md)
 
-* [商品删除](ItemDelete.md)
+* [商品更新上行](OutItemUpdate.md)
+
+* [商品创建上行](OutItemCreate.md)
+
+* [商品同步(正向)](ItemSyncOutbound.md)
 
 ### voucher
 * [券列表查询](VoucherQuery.md)

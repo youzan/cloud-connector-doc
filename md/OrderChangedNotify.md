@@ -13,6 +13,8 @@
 卖家发货完成消息触发 | TradeSellerShipMsg | 卖家发货完成消息触发
 订单完成消息触发 | TradeSuccessMsg | 订单完成消息触发
 订单关闭 | TradeCloseMsg | 订单关闭消息
+导购订单归因完成 | TradeGuideAttributeMsg | 导购订单归因完成消息
+导购订单归因完成 | TradeGuideAttributeMsg | 导购订单归因完成消息
 
 ### 场景流程模板配置
 - 模板ID：OrderStatusChangedNotifyRouteTemplate
@@ -132,4 +134,144 @@ allowNull |
 
 **是否允许自定义实现**: Y
 
+---
+##### customSalesGuideMapping
+> 自定义销售导购映射子流程EndpointUri
+
+**默认值**: bean:guideMappingProviderImpl?method=findValidByYzGuide
+
+已支持的参数值 | 值含义说明
+---|---
+bean:guideMappingProviderImpl?method=findValidByYzGuide | 
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+实现{@link GuideMappingProvider#byYzGuide(com.youzan.cloud.connector.sdk.api.guide.model.ByYzGuideQryParam)}的组件名
+```
+---
+##### customSalesGuideMappingFallback
+> 自定义销售导购获取不到时的FallBack策略子流程EndpointUri
+
+**默认值**: none
+
+已支持的参数值 | 值含义说明
+---|---
+none | 
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+指定allowNull（允许映射为空）
+或实现{@link GuideMappingProvider#byYzGuide(com.youzan.cloud.connector.sdk.api.guide.model.ByYzGuideQryParam)}的降级逻辑的组件名
+```
+---
+##### customServicesGuideMapping
+> 自定义专属导购映射子流程EndpointUri
+
+**默认值**: bean:guideMappingProviderImpl?method=findValidByYzGuide
+
+已支持的参数值 | 值含义说明
+---|---
+bean:guideMappingProviderImpl?method=findValidByYzGuide | 
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+实现{@link GuideMappingProvider#byYzGuide(com.youzan.cloud.connector.sdk.api.guide.model.ByYzGuideQryParam)}的组件名
+```
+---
+##### customServicesGuideMappingFallback
+> 自定义专属导购获取不到时的FallBack策略子流程EndpointUri
+
+**默认值**: none
+
+已支持的参数值 | 值含义说明
+---|---
+none | 
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+指定allowNull（允许映射为空）
+或实现{@link GuideMappingProvider#byYzGuide(com.youzan.cloud.connector.sdk.api.guide.model.ByYzGuideQryParam)}的降级逻辑的组件名
+```
+---
+##### customItemGuideMapping
+> 自定义商品导购映射子流程EndpointUri
+
+**默认值**: bean:guideMappingProviderImpl?method=findValidByYzGuide
+
+已支持的参数值 | 值含义说明
+---|---
+bean:guideMappingProviderImpl?method=findValidByYzGuide | 
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+实现{@link GuideMappingProvider#byYzGuide(com.youzan.cloud.connector.sdk.api.guide.model.ByYzGuideQryParam)}的组件名
+```
+---
+##### customItemGuideMappingFallback
+> 自定义商品导购获取不到时的FallBack策略子流程EndpointUri
+
+**默认值**: none
+
+已支持的参数值 | 值含义说明
+---|---
+none | 
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+指定allowNull（允许映射为空）
+或实现{@link GuideMappingProvider#byYzGuide(com.youzan.cloud.connector.sdk.api.guide.model.ByYzGuideQryParam)}的降级逻辑的组件名
+```
+---
+##### customSalesmanMapping
+> 自定义分销员映射子流程EndpointUri
+
+**默认值**: bean:guideMappingProviderImpl?method=findValidByYzGuide
+
+已支持的参数值 | 值含义说明
+---|---
+bean:guideMappingProviderImpl?method=findValidByYzGuide | 
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+实现{@link GuideMappingProvider#byYzGuide(com.youzan.cloud.connector.sdk.api.guide.model.ByYzGuideQryParam)}的组件名
+```
+---
+##### customSalesmanMappingFallback
+> 自定义分销员获取不到时的FallBack策略子流程EndpointUri
+
+**默认值**: none
+
+已支持的参数值 | 值含义说明
+---|---
+none | 
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+指定allowNull（允许映射为空）
+或实现{@link GuideMappingProvider#byYzGuide(com.youzan.cloud.connector.sdk.api.guide.model.ByYzGuideQryParam)}的降级逻辑的组件名
+```
 
