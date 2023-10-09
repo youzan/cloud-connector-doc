@@ -14,3 +14,4 @@ OrderSelfFetchReverse,订单自提同步有赞
 OrderLogisticsReverse,订单同城配送同步有赞
 OrderLogisticsStatusReverse,订单同城配送状态同步有赞
 OrderQueryReverse,外部订单详情查询
+OrderChanged,订单信息修改

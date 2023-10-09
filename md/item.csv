@@ -1,4 +1,5 @@
-OutItemCreate,商品创建上行
-OutItemUpdate,商品更新上行
-OutItemSync,商品同步上行
 ItemDelete,商品删除
+OutItemSync,商品同步上行
+OutItemUpdate,商品更新上行
+OutItemCreate,商品创建上行
+ItemSyncOutbound,商品同步(正向)
