@@ -39,4 +39,13 @@ VoucherSendReverseYzTemplate-alpha | 有赞标准流程实现alpha版本
 
 **是否允许自定义实现**: Y
 
+---
+##### dependOnYzValidTime
+> 发券时间是否依赖有赞的失效时间
+
+**参数为必填项**
+
+
+**是否允许自定义实现**: Y
+
 

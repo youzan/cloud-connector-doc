@@ -50,8 +50,11 @@
 ##### yzValueCardPayTemplateUri
 > 有赞储值卡支付流程
 
-**参数为必填项**
+**默认值**: ValueCardPayTemplate-alpha
 
+已支持的参数值 | 值含义说明
+---|---
+ValueCardPayTemplate-alpha | 有赞储值卡支付子流程
 
 **是否允许自定义实现**: Y
 

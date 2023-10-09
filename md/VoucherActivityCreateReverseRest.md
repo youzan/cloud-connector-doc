@@ -66,6 +66,24 @@ false | 不需要
 **是否允许自定义实现**: Y
 
 ---
+##### itemFillCustomize
+> 是否自定义商品填充逻辑
+
+**参数为必填项**
+
+
+**是否允许自定义实现**: Y
+
+---
+##### activityFullItemInfoCustomizeTemplate
+> 
+
+**参数为必填项**
+
+
+**是否允许自定义实现**: Y
+
+---
 ##### customShopRelationMapping
 > 自定义外部店铺映射子流程EndpointUri
 

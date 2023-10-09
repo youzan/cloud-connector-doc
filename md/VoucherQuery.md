@@ -49,8 +49,11 @@ VoucherQueryYzTemplate-alpha | 有赞标准流程实现alpha版本
 ##### voucherSendReverseTemplateUri
 > 券回流uri
 
-**参数为必填项**
+**默认值**: VoucherSendReverse
 
+已支持的参数值 | 值含义说明
+---|---
+VoucherSendReverse | 有赞券回流流程
 
 **是否允许自定义实现**: Y
 

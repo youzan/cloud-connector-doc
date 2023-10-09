@@ -36,8 +36,11 @@
 ##### yzValueCardListQueryTemplateUri
 > 有赞查询储值卡列表
 
-**参数为必填项**
+**默认值**: ValueCardListQueryTemplate-alpha
 
+已支持的参数值 | 值含义说明
+---|---
+ValueCardListQueryTemplate-alpha | 有赞查询储值卡列表子流程
 
 **是否允许自定义实现**: Y
 

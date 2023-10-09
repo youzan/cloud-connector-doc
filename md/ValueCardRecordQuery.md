@@ -36,8 +36,11 @@
 ##### yzValueCardRecordQueryTemplateUri
 > 有赞储值交易明细查询流程
 
-**参数为必填项**
+**默认值**: ValueCardRecordQueryTemplate-alpha
 
+已支持的参数值 | 值含义说明
+---|---
+ValueCardRecordQueryTemplate-alpha | 有赞储值交易明细查询子流程
 
 **是否允许自定义实现**: Y
 

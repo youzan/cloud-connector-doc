@@ -22,11 +22,8 @@
 ##### tripartiteGetItemUri
 > 获取三方商品详情
 
-**默认值**: bean:emptyProducer?method=process
+**参数为必填项**
 
-已支持的参数值 | 值含义说明
----|---
-bean:emptyProducer?method=process | 无业务处理逻辑
 
 **是否允许自定义实现**: Y
 

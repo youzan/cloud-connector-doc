@@ -36,8 +36,11 @@
 ##### yzValueCardRechargeTemplateUri
 > 有赞储值卡充值流程
 
-**参数为必填项**
+**默认值**: ValueCardRechargeBonusTemplate-alpha
 
+已支持的参数值 | 值含义说明
+---|---
+ValueCardRechargeBonusTemplate-alpha | 有赞储值卡充值赠送金子流程
 
 **是否允许自定义实现**: Y
 

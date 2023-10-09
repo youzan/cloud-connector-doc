@@ -33,6 +33,8 @@
 
 * [外部订单详情查询](OrderQueryReverse.md)
 
+* [订单信息修改](OrderChanged.md)
+
 ### scrm
 * [会员正向创建](MemberCreate.md)
 
@@ -240,8 +242,6 @@
 
 * [优惠券正向转赠](VoucherHandSel.md)
 
-* [](.md)
-
 ### valuecard
 * [储值卡列表](ValueCardListQuery.md)
 
@@ -290,8 +290,4 @@
 * [储值卡退款逆向](ValueCardRefundReverse.md)
 
 * [储值卡退款结果查询逆向](ValueCardRefundQueryReverse.md)
-
-* [储值卡购卡中心](ValueCardDetailBuyCenter.md)
-
-* [](.md)
 

@@ -9,7 +9,7 @@
 
 名称 | 标识 | 描述详情
 ---|---|---
-库存同步到有赞 | StockSyncInvoke | 库存同步到有赞
+库存同步到有赞 | StockSyncRest | 库存同步到有赞
 
 ### 场景流程模板配置
 - 模板ID：StockSynchronizer

@@ -20,7 +20,7 @@
 
 ---
 ##### tripartiteGetItemUri
-> 
+> 获取三方商品信息
 
 **默认值**: bean:emptyProducer?method=process
 
@@ -154,7 +154,7 @@ false |
 
 ---
 ##### ITEM_CREATE_URI
-> 
+> //         * @refScene OutItemCreate
 
 **默认值**: OutItemCreate
 

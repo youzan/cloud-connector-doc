@@ -48,10 +48,11 @@ VoucherActivityUpdateYzTemplate-alpha | 有赞标准流程实现alpha版本
 ##### useItemRoute
 > 是否打通商品
 
-**默认值**: true
+**默认值**: ignore
 
 已支持的参数值 | 值含义说明
 ---|---
+ignore | 忽略商品校验
 true | 打通
 false | 不打通
 

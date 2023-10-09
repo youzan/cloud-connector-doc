@@ -36,8 +36,11 @@
 ##### yzValueCardRefundTemplateUri
 > 有赞储值卡退款流程
 
-**参数为必填项**
+**默认值**: ValueCardRefundTemplate-alpha
 
+已支持的参数值 | 值含义说明
+---|---
+ValueCardRefundTemplate-alpha | 储值卡退款有赞流程
 
 **是否允许自定义实现**: Y
 

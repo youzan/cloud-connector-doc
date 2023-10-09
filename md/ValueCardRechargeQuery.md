@@ -36,8 +36,11 @@
 ##### yzValueCardRechargeQueryTemplateUri
 > 有赞充值结果查询流程
 
-**参数为必填项**
+**默认值**: ValueCardRechargeQueryTemplate-alpha
 
+已支持的参数值 | 值含义说明
+---|---
+ValueCardRechargeQueryTemplate-alpha | 有赞充值结果查询子流程
 
 **是否允许自定义实现**: Y
 
