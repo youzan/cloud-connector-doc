@@ -140,6 +140,26 @@
 
 * [积分逆向过期](PointReverseExpired.md)
 
+* [标签组正向创建](TagCreate.md)
+
+* [标签组正向更新](TagUpdate.md)
+
+* [标签组正向删除](TagDelete.md)
+
+* [标签组逆向创建](TagReverseCreate.md)
+
+* [标签组逆向更新](TagReverseUpdate.md)
+
+* [标签组逆向删除](TagReverseDelete.md)
+
+* [会员标签正向初始化](MemberTagInit.md)
+
+* [会员标签逆向初始化](MemberTagReverseInit.md)
+
+* [会员标签正向更新](MemberTagUpdate.md)
+
+* [会员标签逆向更新](MemberTagReverseUpdate.md)
+
 ### guide
 * [导购客户关系变更](GuideRelationChange.md)
 

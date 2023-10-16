@@ -61,8 +61,11 @@ bean:userMappingProviderImpl?method=byYzUser |
 ##### tripartiteCouponQueryTemplateUri
 > 
 
-**参数为必填项**
+**默认值**: none
 
+已支持的参数值 | 值含义说明
+---|---
+none | 
 
 **是否允许自定义实现**: Y
 

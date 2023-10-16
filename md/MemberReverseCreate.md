@@ -23,7 +23,7 @@
 ##### tripartiteFetchUri
 > 
 
-**默认值**: mock:doNothing
+**默认值**: bean:emptyProducer?method=process
 
 已支持的参数值 | 值含义说明
 ---|---

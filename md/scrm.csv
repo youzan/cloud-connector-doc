@@ -50,3 +50,13 @@ MemberReverseMergeProperty,会员逆向换绑后资产合并
 PointUpdate,积分修改（消息触发）
 PointExpired,积分正向过期
 PointReverseExpired,积分逆向过期
+TagCreate,标签组正向创建
+TagUpdate,标签组正向更新
+TagDelete,标签组正向删除
+TagReverseCreate,标签组逆向创建
+TagReverseUpdate,标签组逆向更新
+TagReverseDelete,标签组逆向删除
+MemberTagInit,会员标签正向初始化
+MemberTagReverseInit,会员标签逆向初始化
+MemberTagUpdate,会员标签正向更新
+MemberTagReverseUpdate,会员标签逆向更新
