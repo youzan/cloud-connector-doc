@@ -17,7 +17,6 @@ VoucherSendReverse,优惠券发放逆向
 VoucherOperateReverse,外部券操作同步至有赞
 ActivityUpdate,有赞券模版修改
 ActivityTemplateCreate,有赞券模版同步到三方
-AvailableVoucherQuery,可用券查询
 VoucherFrozenReverseRest,优惠券逆向冻结REST接口
 VoucherPreVerifyReverseRest,优惠券逆向预核销REST接口
 VoucherQueryDiscountReverseRest,优惠券逆向查询优惠折扣信息REST接口

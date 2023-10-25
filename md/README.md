@@ -236,8 +236,6 @@
 
 * [有赞券模版同步到三方](ActivityTemplateCreate.md)
 
-* [可用券查询](AvailableVoucherQuery.md)
-
 * [优惠券逆向冻结REST接口](VoucherFrozenReverseRest.md)
 
 * [优惠券逆向预核销REST接口](VoucherPreVerifyReverseRest.md)
