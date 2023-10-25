@@ -64,20 +64,6 @@ none | 无业务逻辑处理
 三方更新客户标签url，覆盖写
 ```
 ---
-##### tripartiteMemberTagsQueryUri
-> 
-
-**参数为必填项**
-
-
-**是否允许自定义实现**: Y
-
-
-**定制示例**:
-```
-三方查询客户标签url
-```
----
 ##### tagInitRuleStrategyUri
 > 标签对齐：
 

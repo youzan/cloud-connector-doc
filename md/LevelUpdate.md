@@ -10,6 +10,7 @@
 名称 | 标识 | 描述详情
 ---|---|---
 等级更新 | LevelUpdateExt | 等级更新
+付费等级更新 | PaymentLevelUpdateMsg | 付费等级更新
 
 ### 场景流程模板配置
 - 模板ID：LevelUpdateRouteTemplate
@@ -88,6 +89,36 @@ levelRuleSingleTripartite | 单中心，以三方为主
 tripartiteLevelRuleValueRandom | 三方等级排序，随机
 tripartiteLevelRuleValueLow | 三方等级排序，低的为主
 tripartiteLevelRuleValueHigh | 三方等级排序，高的为主
+
+**是否允许自定义实现**: Y
+
+---
+##### customUserMapping
+> 自定义根据yzOpenId查询用户关联关系
+
+**默认值**: bean:userMappingProviderImpl?method=byYzUser
+
+已支持的参数值 | 值含义说明
+---|---
+bean:userMappingProviderImpl?method=byYzUser | 
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+自定义根据yzOpenId查询用户关联关系EndpointUri 或 实现@link(com.youzan.cloud.connector.sdk.api.common.ExchangeFilterPredicate)的组件名
+```
+---
+##### customUserMappingFallback
+> 是否允许不存在用户映射
+
+**默认值**: none
+
+已支持的参数值 | 值含义说明
+---|---
+none | 不允许不存在用户映射
+allowNull | 允许不存在用户映射
 
 **是否允许自定义实现**: Y
 

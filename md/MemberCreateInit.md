@@ -135,6 +135,32 @@ enable | 打通
 **是否允许自定义实现**: Y
 
 ---
+##### tagMergeRule
+> 正向标签对齐开关
+
+**默认值**: disable
+
+已支持的参数值 | 值含义说明
+---|---
+disable | 不打通
+enable | 打通
+
+**是否允许自定义实现**: Y
+
+---
+##### tagReverseMergeRule
+> 逆向标签对齐开关
+
+**默认值**: disable
+
+已支持的参数值 | 值含义说明
+---|---
+disable | 不打通
+enable | 打通
+
+**是否允许自定义实现**: Y
+
+---
 ##### voucherMergeRule
 > 优惠券对齐
 

@@ -58,4 +58,17 @@ memberTagUpdateSceneYzTemplate-alpha |
 ```
 三方查询客户标签url
 ```
+---
+##### isQueryTripartite
+> 是否查询三方客户标签
+
+**默认值**: disable
+
+已支持的参数值 | 值含义说明
+---|---
+disable | 不启用
+enable | 启用
+
+**是否允许自定义实现**: Y
+
 
