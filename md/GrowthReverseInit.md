@@ -136,13 +136,14 @@ bean:userMappingProviderImpl?method=byOutUser |
 
 ---
 ##### customUserMappingFallback
-> 自定义外部用户获取不到时的FallBack策略子流程EndpointUri
+> 是否允许不存在用户映射
 
 **默认值**: none
 
 已支持的参数值 | 值含义说明
 ---|---
-none | 无业务逻辑处理
+none | 不允许不存在用户映射
+allowNull | 允许不存在用户映射（暂不支持）
 
 **是否允许自定义实现**: Y
 

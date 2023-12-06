@@ -92,12 +92,12 @@ bean:userMappingProviderImpl?method=byYzUser |
 ##### customUserMappingFallback
 > 是否允许不存在用户映射
 
-**默认值**: allowNull
+**默认值**: none
 
 已支持的参数值 | 值含义说明
 ---|---
-allowNull | 允许不存在用户映射
 none | 不允许不存在用户映射
+allowNull | 允许不存在用户映射
 
 **是否允许自定义实现**: Y
 

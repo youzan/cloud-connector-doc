@@ -107,7 +107,8 @@ bean:userMappingProviderImpl?method=byYzUser |
 
 **定制示例**:
 ```
-自定义根据yzOpenId查询用户关联关系EndpointUri 或 实现@link(com.youzan.cloud.connector.sdk.api.common.ExchangeFilterPredicate)的组件名
+自定义外部用户映射子流程EndpointUri
+或实现{@link com.youzan.cloud.connector.sdk.api.user.UserMappingProvider#byYzUser(com.youzan.cloud.connector.sdk.api.user.model.ByYzUserQryParam)}的组件名
 ```
 ---
 ##### customUserMappingFallback

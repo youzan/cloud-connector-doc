@@ -34,8 +34,11 @@ VoucherActivityCreateReverseRestYzTemplate-alpha | 有赞标准流程实现alpha
 ##### customPreProcessActivityTemplate
 > 券模板实体预处理, 比如三方信息暂存处理，默认啥都不做
 
-**参数为必填项**
+**默认值**: bean:emptyProducer?method=process
 
+已支持的参数值 | 值含义说明
+---|---
+bean:emptyProducer?method=process | 
 
 **是否允许自定义实现**: Y
 
@@ -69,8 +72,11 @@ false | 不需要
 ##### itemFillCustomize
 > 是否自定义商品填充逻辑
 
-**参数为必填项**
+**默认值**: false
 
+已支持的参数值 | 值含义说明
+---|---
+false | 
 
 **是否允许自定义实现**: Y
 

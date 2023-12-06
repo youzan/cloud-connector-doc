@@ -153,4 +153,21 @@ allowNull | 允许不存在用户映射
 
 **是否允许自定义实现**: Y
 
+---
+##### tripartiteAfterUri
+> 
+
+**默认值**: bean:emptyProducer?method=process
+
+已支持的参数值 | 值含义说明
+---|---
+bean:emptyProducer?method=process | 无业务逻辑处理
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+厂商自定义后置处理（标准流程执行完毕后，厂商可自定义自己的代码流程）
+```
 

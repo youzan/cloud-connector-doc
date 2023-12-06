@@ -21,7 +21,7 @@
 
 ---
 ##### yzStandardUri
-> 会员查询正向新增流程
+> 会员创建正向新增流程
 
 **默认值**: memberCreateSceneYzTemplate-alpha
 
@@ -170,5 +170,22 @@ false | 是单中心（三方新增会员时不会同步至有赞)
 **定制示例**:
 ```
 三方默认等级（如果新建接口等级必传时，可以设置个默认等级）
+```
+---
+##### customPreFilterPredicate
+> 自定义前置过滤
+
+**默认值**: none
+
+已支持的参数值 | 值含义说明
+---|---
+none | 无业务逻辑处理
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+自定义前置过滤逻子流程EndpointUri 或 实现@link(com.youzan.cloud.connector.sdk.api.common.ExchangeFilterPredicate)的组件名
 ```
 

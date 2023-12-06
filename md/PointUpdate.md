@@ -48,26 +48,79 @@ none | 无业务逻辑处理
 自定义前置过滤逻子流程EndpointUri 或 实现@link(com.youzan.cloud.connector.sdk.api.common.ExchangeFilterPredicate)的组件名
 ```
 ---
-##### subIncreasePointUri
-> 增加积分uri
+##### pointRuleStrategyUri
+> 积分规则：单双中心，以哪方为主
 
-**默认值**: PointIncrease
+**默认值**: pointRuleDoubleTripartite
 
 已支持的参数值 | 值含义说明
 ---|---
-PointIncrease | 
+pointRuleDoubleTripartite | 双中心,以三方为主
+pointRuleDoubleYz | 双中心,以有赞为主
+pointRuleSingleYz | 单中心,以有赞为主
+pointRuleSingleTripartite | 单中心，以三方为主
 
 **是否允许自定义实现**: Y
 
 ---
-##### subDecreasePointUri
-> 减少积分uri
+##### tripartiteIncreasePointUri
+> 外部三方根据标准交换实体"增加用户积分"的子流程模板EndpointUri或模板ID
 
-**默认值**: PointDecrease
+**参数为必填项**
+
+
+**是否允许自定义实现**: Y
+
+---
+##### tripartiteDecreasePointUri
+> 外部三方根据标准交换实体"减少用户积分"的子流程模板EndpointUri或模板ID
+
+**参数为必填项**
+
+
+**是否允许自定义实现**: Y
+
+---
+##### customUserMapping
+> 自定义根据yzOpenId查询用户关联关系
+
+**默认值**: bean:userMappingProviderImpl?method=byYzUser
 
 已支持的参数值 | 值含义说明
 ---|---
-PointDecrease | 
+bean:userMappingProviderImpl?method=byYzUser | 
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+自定义根据yzOpenId查询用户关联关系EndpointUri 或 实现@link(com.youzan.cloud.connector.sdk.api.common.ExchangeFilterPredicate)的组件名
+```
+---
+##### customUserMappingFallback
+> 是否允许不存在用户映射
+
+**默认值**: none
+
+已支持的参数值 | 值含义说明
+---|---
+none | 不允许不存在用户映射
+allowNull | 允许不存在用户映射
+
+**是否允许自定义实现**: Y
+
+---
+##### nodeShopRule
+> 
+
+**默认值**: disable
+
+已支持的参数值 | 值含义说明
+---|---
+disable | 不打通
+enable | 打通
+是否打通积分变更触发店铺
 
 **是否允许自定义实现**: Y
 

@@ -45,11 +45,11 @@
 ##### yzValueCardRuleQueryTemplateUri
 > 有赞储值规则查询流程
 
-**默认值**: ValueCardRuleQueryTemplate-alph
+**默认值**: ValueCardRuleQueryTemplate-alpha
 
 已支持的参数值 | 值含义说明
 ---|---
-ValueCardRuleQueryTemplate-alph | 有赞储值规则查询子流程
+ValueCardRuleQueryTemplate-alpha | 有赞储值规则查询子流程
 
 **是否允许自定义实现**: Y
 

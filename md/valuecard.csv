@@ -22,3 +22,4 @@ ValueCardPayReverse,储值卡支付逆向
 ValueCardPayQueryReverse,储值卡支付结果查询逆向
 ValueCardRefundReverse,储值卡退款逆向
 ValueCardRefundQueryReverse,储值卡退款结果查询逆向
+ValueCardSingleAdjustment,储值卡单笔调账

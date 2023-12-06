@@ -89,23 +89,17 @@ bean:userMappingProviderImpl?method=byYzUser |
 ```
 ---
 ##### customUserMappingFallback
-> 
+> 是否允许不存在用户映射
 
 **默认值**: none
 
 已支持的参数值 | 值含义说明
 ---|---
-none | 无业务逻辑处理
+none | 不允许不存在用户映射
+allowNull | 允许不存在用户映射
 
 **是否允许自定义实现**: Y
 
-
-**定制示例**:
-```
-自定义外部用户获取不到时的FallBack策略子流程EndpointUri
-或指定allowNull（允许映射为空）
-或实现{@link UserMappingProvider#byOutUser(com.youzan.cloud.connector.sdk.api.user.model.ByOutUserQryParam)}的组件名
-```
 ---
 ##### tripartiteMemberUpdateUri
 > 

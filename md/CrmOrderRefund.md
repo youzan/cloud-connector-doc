@@ -77,4 +77,56 @@ none | 没有实现，不做处理，预留扩展
 ```
 实现{@link ExchangeEntityEnrichTransform <OutOrderRefundEntity, String>}的组件名
 ```
+---
+##### customShopRelationMapping
+> 自定义外部店铺映射子流程EndpointUri
+
+**默认值**: bean:shopMappingProviderImpl?method=byOutShop
+
+已支持的参数值 | 值含义说明
+---|---
+bean:shopMappingProviderImpl?method=byOutShop | 根据配置的店铺映射查询外部店铺标识对应的有赞店铺
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+实现{@link ShopMappingProvider#byOutShop(com.youzan.cloud.connector.sdk.api.shop.model.ByOutShopQryParam)}的组件名
+```
+---
+##### customUserMapping
+> 自定义外部用户映射子流程EndpointUri
+
+**默认值**: bean:userMappingProviderImpl?method=byOutUser
+
+已支持的参数值 | 值含义说明
+---|---
+bean:userMappingProviderImpl?method=byOutUser | 根据用户映射表查询外部用户标识对应的有赞会员信息
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+实现{@link UserMappingProvider#byOutUser(com.youzan.cloud.connector.sdk.api.user.model.ByOutUserQryParam)}的组件名
+```
+---
+##### customUserMappingFallback
+> 自定义销售导购获取不到时的FallBack策略子流程EndpointUri
+
+**默认值**: none
+
+已支持的参数值 | 值含义说明
+---|---
+none | 没有实现降级逻辑，查询不存在时阻断流程
+allowNull | 查询不存在时降级不阻断流程执行
+
+**是否允许自定义实现**: Y
+
+
+**定制示例**:
+```
+实现{@link UserMappingProvider#byOutUser(com.youzan.cloud.connector.sdk.api.user.model.ByOutUserQryParam)}的组件名
+```
 
