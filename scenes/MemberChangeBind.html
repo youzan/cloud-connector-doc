@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<p>[toc]</p>
+<h2 id="会员正向换绑">会员正向换绑</h2>
+<ul>
+<li><p>标识：MemberChangeBind</p></li>
+<li><p>交换实体：com.youzan.cloud.connector.sdk.core.scrm.MemberChangeExchangeEntity</p>
+<h3 id="场景说明">场景说明</h3>
+<p>会员正向换绑</p>
+<h3 id="场景流程入口">场景流程入口</h3></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>名称</th>
+<th>标识</th>
+<th>描述详情</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>手机号修改消息</td>
+<td>MemberMobileChangeMsg</td>
+<td>手机号修改消息</td>
+</tr>
+</tbody>
+</table>
+<h3 id="场景流程模板配置">场景流程模板配置</h3>
+<ul>
+<li>模板ID：MemberRebindRouteTemplate</li>
+<li>模板类：com.youzan.cloud.connector.sdk.template.scrm.member.MemberRebindRouteTemplate</li>
+<li>模板参数类：com.youzan.cloud.connector.sdk.template.scrm.member.MemberRebindRouteTemplate$TemplateParameters</li>
+</ul>
+<h4 id="配置参数列表">配置参数列表</h4>
+<hr />
+<h5 id="yzstandarduri">yzStandardUri</h5>
+<blockquote>
+<p>会员换绑模版</p>
+</blockquote>
+<p><strong>默认值</strong>: memberChangeBindSceneYzTemplate-alpha</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>memberChangeBindSceneYzTemplate-alpha</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="customprefilterpredicate">customPreFilterPredicate</h5>
+<blockquote>
+<p>自定义前置过滤</p>
+</blockquote>
+<p><strong>默认值</strong>: none</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>none</td>
+<td>无业务逻辑处理</td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<p><strong>定制示例</strong>:</p>
+<pre><code>自定义前置过滤逻子流程EndpointUri 或 实现@link(com.youzan.cloud.connector.sdk.api.common.ExchangeFilterPredicate)的组件名</code></pre>
+<hr />
+<h5 id="tripartitememberqueryuri">tripartiteMemberQueryUri</h5>
+<blockquote>
+<p>外部三方根据标准交换实体"根据手机号查询三方用户"的子流程模板EndpointUri或模板ID</p>
+</blockquote>
+<p><strong>参数为必填项</strong></p>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="tripartitemergememberuri">tripartiteMergeMemberUri</h5>
+<blockquote>
+<p>外部三方根据标准交换实体"合并账号"的子流程模板EndpointUri或模板ID</p>
+</blockquote>
+<p><strong>参数为必填项</strong></p>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="tripartitechangemobileuri">tripartiteChangeMobileUri</h5>
+<blockquote>
+<p>外部三方根据标准交换实体"换手机号"的子流程模板EndpointUri或模板ID</p>
+</blockquote>
+<p><strong>参数为必填项</strong></p>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="mergepropertyrulestrategyuri">mergePropertyRuleStrategyUri</h5>
+<blockquote>
+<p>资产合并规则：如何资产合并</p>
+</blockquote>
+<p><strong>默认值</strong>: mergePropertyRuleManmade</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>mergePropertyRuleManmade</td>
+<td>人工合并</td>
+</tr>
+<tr class="even">
+<td>mergePropertyRuleTripartite</td>
+<td>调用三方接口合并</td>
+</tr>
+<tr class="odd">
+<td>mergePropertyRuleIpass</td>
+<td>连接器侧处理合并</td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>

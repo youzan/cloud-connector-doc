@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<p>[toc]</p>
+<h2 id="退款单推送">退款单推送</h2>
+<ul>
+<li><p>标识：OrderRefundPush</p></li>
+<li><p>交换实体：com.youzan.cloud.connector.sdk.core.trade.OrderRefundExchangeEntity</p>
+<h3 id="场景说明">场景说明</h3>
+<p>退款单推送</p>
+<h3 id="场景流程入口">场景流程入口</h3></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>名称</th>
+<th>标识</th>
+<th>描述详情</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>卖家主动退款消息触发</td>
+<td>RefundSellerCreatedMsg</td>
+<td>卖家主动退款消息触发</td>
+</tr>
+<tr class="even">
+<td>买家退货成功(终态)消息触发</td>
+<td>TradeRefundSuccessMsg</td>
+<td>买家退货成功(终态)消息触发</td>
+</tr>
+<tr class="odd">
+<td>卖家同意退款（终态）消息触发</td>
+<td>TradeRefundSellerAgreeMsg</td>
+<td>卖家同意退款（终态）消息触发</td>
+</tr>
+<tr class="even">
+<td>一键退款/系统退款消息触发</td>
+<td>TradeRefundSysRefundMsg</td>
+<td>一键退款/系统退款消息触发</td>
+</tr>
+<tr class="odd">
+<td>买家发起退款消息触发</td>
+<td>RefundBuyerCreatedMsg</td>
+<td>买家发起退款消息触发</td>
+</tr>
+</tbody>
+</table>
+<h3 id="场景流程模板配置">场景流程模板配置</h3>
+<ul>
+<li>模板ID：OrderRefundPushRouteTemplate</li>
+<li>模板类：com.youzan.cloud.connector.sdk.template.trade.OrderRefundPushRouteTemplate</li>
+<li>模板参数类：com.youzan.cloud.connector.sdk.template.trade.OrderRefundPushRouteTemplate$TemplateParameters</li>
+</ul>
+<h4 id="配置参数列表">配置参数列表</h4>
+<hr />
+<h5 id="yzpushrefundorderuri">yzPushRefundOrderUri</h5>
+<blockquote>
+<p>有赞同步维权单标准流程模板EndpointUri或模板ID</p>
+</blockquote>
+<p><strong>默认值</strong>: RefundOrderCreateYzTemplate-alpha</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RefundOrderCreateYzTemplate-alpha</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5
+id="tripartitecreaterefundorderuri">tripartiteCreateRefundOrderUri</h5>
+<blockquote>
+<p>外部三方根据标准交换实体同步创建外部维权单的子流程模板EndpointUri或模板ID</p>
+</blockquote>
+<p><strong>参数为必填项</strong></p>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="customshoprelationmapping">customShopRelationMapping</h5>
+<blockquote>
+
+</blockquote>
+<p><strong>默认值</strong>:
+bean:shopMappingProviderImpl?method=byYzShop</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>bean:shopMappingProviderImpl?method=byYzShop</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<p><strong>定制示例</strong>:</p>
+<pre><code>自定义外部店铺映射子流程EndpointUri
+或实现{@link ShopMappingProvider#byYzShop(com.youzan.cloud.connector.sdk.api.shop.model.ByYzShopQryParam)}的组件名</code></pre>
+<hr />
+<h5
+id="customshoprelationmappingfallback">customShopRelationMappingFallback</h5>
+<blockquote>
+
+</blockquote>
+<p><strong>默认值</strong>: none</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>none</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<p><strong>定制示例</strong>:</p>
+<pre><code>自定义外部店铺获取不到时的FallBack策略子流程EndpointUri
+或指定allowNull（允许映射为空）
+或实现{@link ShopMappingProvider#byYzShop(com.youzan.cloud.connector.sdk.api.shop.model.ByYzShopQryParam)}的组件名</code></pre>
+<hr />
+<h5 id="customusermapping">customUserMapping</h5>
+<blockquote>
+
+</blockquote>
+<p><strong>默认值</strong>:
+bean:userMappingProviderImpl?method=byYzUser</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>bean:userMappingProviderImpl?method=byYzUser</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<p><strong>定制示例</strong>:</p>
+<pre><code>自定义外部用户映射子流程EndpointUri
+或实现{@link com.youzan.cloud.connector.sdk.api.user.UserMappingProvider#byYzUser(com.youzan.cloud.connector.sdk.api.user.model.ByYzUserQryParam)}的组件名</code></pre>
+<hr />
+<h5 id="customusermappingfallback">customUserMappingFallback</h5>
+<blockquote>
+
+</blockquote>
+<p><strong>默认值</strong>: none</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>none</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<p><strong>定制示例</strong>:</p>
+<pre><code>自定义外部用户获取不到时的FallBack策略子流程EndpointUri
+或指定allowNull（允许映射为空）
+或实现{@link UserMappingProvider#byOutUser(com.youzan.cloud.connector.sdk.api.user.model.ByOutUserQryParam)}的组件名</code></pre>
+<hr />
+<h5
+id="customenrichoriginalorderinfo">customEnrichOriginalOrderInfo</h5>
+<blockquote>
+<p>指定是否需要扩展原订单信息</p>
+</blockquote>
+<p><strong>默认值</strong>: enable</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>enable</td>
+<td>是</td>
+</tr>
+<tr class="even">
+<td>disable</td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="customprefilterpredicate">customPreFilterPredicate</h5>
+<blockquote>
+
+</blockquote>
+<p><strong>默认值</strong>: orderRefundStandardPreFilterPredicate</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>orderRefundStandardPreFilterPredicate</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<p><strong>定制示例</strong>:</p>
+<pre><code>自定义前置过滤逻辑子流程EndpointUri
+或实现{@link(com.youzan.cloud.connector.sdk.api.common.ExchangeFilterPredicate)}的组件名</code></pre>
+<hr />
+<h5 id="customenrichorderitemmapping">customEnrichOrderItemMapping</h5>
+<blockquote>
+
+</blockquote>
+<p><strong>默认值</strong>: enable</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>enable</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>disable</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<p><strong>定制示例</strong>:</p>
+<pre><code>自定义外部子订单映射子流程EndpointUri
+或实现{@link com.youzan.cloud.connector.sdk.api.order.SubOrderMappingProvider#byYzOid(ByYzOidQryParam)}的组件名</code></pre>
+<hr />
+<h5 id="duplicatedvalidate">duplicatedValidate</h5>
+<blockquote>
+<p>指定是否启用幂等校验</p>
+</blockquote>
+<p><strong>默认值</strong>: enable</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>enable</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>disable</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>

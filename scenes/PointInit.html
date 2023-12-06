@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<p>[toc]</p>
+<h2 id="积分正向初始化">积分正向初始化</h2>
+<ul>
+<li><p>标识：PointInit</p></li>
+<li><p>交换实体：com.youzan.cloud.connector.sdk.core.scrm.PointOperateExchangeEntity</p>
+<h3 id="场景说明">场景说明</h3>
+<p>积分正向初始化</p>
+<h3 id="场景流程入口">场景流程入口</h3></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>名称</th>
+<th>标识</th>
+<th>描述详情</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>积分正向初始化</td>
+<td>PointInitInvoke</td>
+<td>积分正向初始化</td>
+</tr>
+<tr class="even">
+<td>积分对齐：资产合并后对齐有赞和三方积分</td>
+<td>PointAlignInvoke</td>
+<td>积分对齐：资产合并后对齐有赞和三方积分</td>
+</tr>
+</tbody>
+</table>
+<h3 id="场景流程模板配置">场景流程模板配置</h3>
+<ul>
+<li>模板ID：PointInitRouteTemplate</li>
+<li>模板类：com.youzan.cloud.connector.sdk.template.scrm.point.PointInitRouteTemplate</li>
+<li>模板参数类：com.youzan.cloud.connector.sdk.template.scrm.point.PointInitRouteTemplate$TemplateParameters</li>
+</ul>
+<h4 id="配置参数列表">配置参数列表</h4>
+<hr />
+<h5 id="yzstandarduri">yzStandardUri</h5>
+<blockquote>
+<p>有赞标准模板：积分正向初始化</p>
+</blockquote>
+<p><strong>默认值</strong>: PointInitTemplateYzTemplate-alpha</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PointInitTemplateYzTemplate-alpha</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="customprefilterpredicate">customPreFilterPredicate</h5>
+<blockquote>
+<p>自定义前置过滤</p>
+</blockquote>
+<p><strong>默认值</strong>: none</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>none</td>
+<td>无业务逻辑处理</td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<p><strong>定制示例</strong>:</p>
+<pre><code>自定义前置过滤逻子流程EndpointUri 或 实现@link(com.youzan.cloud.connector.sdk.api.common.ExchangeFilterPredicate)的组件名</code></pre>
+<hr />
+<h5 id="tripartitegetpointuri">tripartiteGetPointUri</h5>
+<blockquote>
+<p>外部三方根据标准交换实体"查询用户积分"的子流程模板EndpointUri或模板ID</p>
+</blockquote>
+<p><strong>参数为必填项</strong></p>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="tripartiteincreasepointuri">tripartiteIncreasePointUri</h5>
+<blockquote>
+<p>外部三方根据标准交换实体"增加用户积分"的子流程模板EndpointUri或模板ID</p>
+</blockquote>
+<p><strong>参数为必填项</strong></p>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="tripartitedecreasepointuri">tripartiteDecreasePointUri</h5>
+<blockquote>
+<p>外部三方根据标准交换实体"减少用户积分"的子流程模板EndpointUri或模板ID</p>
+</blockquote>
+<p><strong>参数为必填项</strong></p>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="initpointrulestrategyuri">initPointRuleStrategyUri</h5>
+<blockquote>
+<p>初始化积分时，积分处理规则</p>
+</blockquote>
+<p><strong>默认值</strong>: initPointRuleSum</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>initPointRuleSum</td>
+<td>三方和有赞积分累加</td>
+</tr>
+<tr class="even">
+<td>initPointRuleTripartite</td>
+<td>使用三方积分</td>
+</tr>
+<tr class="odd">
+<td>initPointRuleYz</td>
+<td>使用有赞积分</td>
+</tr>
+<tr class="even">
+<td>initPointRuleHigh</td>
+<td>取高的积分值</td>
+</tr>
+<tr class="odd">
+<td>initPointRuleCustom</td>
+<td>自定义积分计算</td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="custompointcalculate">customPointCalculate</h5>
+<blockquote>
+<p>自定义积分计算（当initPointRuleStrategyUri选择StrategyValueEnum.INIT_POINT_RULE_CUSTOM.getSubRouteId()时实现）</p>
+</blockquote>
+<p><strong>默认值</strong>: none</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>none</td>
+<td>无业务逻辑处理</td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<p><strong>定制示例</strong>:</p>
+<pre><code>自定义积分计算子流程模板EndpointUri或模板ID</code></pre>
+<hr />
+<h5 id="pointrulestrategyuri">pointRuleStrategyUri</h5>
+<blockquote>
+<p>积分规则：单双中心，以哪方为主</p>
+</blockquote>
+<p><strong>默认值</strong>: pointRuleDoubleTripartite</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pointRuleDoubleTripartite</td>
+<td>双中心,以三方为主</td>
+</tr>
+<tr class="even">
+<td>pointRuleDoubleYz</td>
+<td>双中心,以有赞为主</td>
+</tr>
+<tr class="odd">
+<td>pointRuleSingleYz</td>
+<td>单中心,以有赞为主</td>
+</tr>
+<tr class="even">
+<td>pointRuleSingleTripartite</td>
+<td>单中心，以三方为主</td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="customusermapping">customUserMapping</h5>
+<blockquote>
+<p>自定义根据yzOpenId查询用户关联关系</p>
+</blockquote>
+<p><strong>默认值</strong>:
+bean:userMappingProviderImpl?method=byYzUser</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>bean:userMappingProviderImpl?method=byYzUser</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<p><strong>定制示例</strong>:</p>
+<pre><code>自定义根据yzOpenId查询用户关联关系EndpointUri 或 实现@link(com.youzan.cloud.connector.sdk.api.common.ExchangeFilterPredicate)的组件名</code></pre>
+<hr />
+<h5 id="customusermappingfallback">customUserMappingFallback</h5>
+<blockquote>
+<p>是否允许不存在用户映射</p>
+</blockquote>
+<p><strong>默认值</strong>: none</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>none</td>
+<td>不允许不存在用户映射</td>
+</tr>
+<tr class="even">
+<td>allowNull</td>
+<td>允许不存在用户映射</td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>

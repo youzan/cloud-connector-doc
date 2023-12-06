@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<p>[toc]</p>
+<h2 id="导购档案初始化对齐">导购档案初始化对齐</h2>
+<ul>
+<li><p>标识：GuideInfoDataConsistencyProcess</p></li>
+<li><p>交换实体：com.youzan.cloud.connector.sdk.core.guide.GuideInfoDataConsistencyProcessExchangeEntity</p>
+<h3 id="场景说明">场景说明</h3>
+<p>导购档案初始化对齐</p>
+<h3 id="场景流程入口">场景流程入口</h3></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>名称</th>
+<th>标识</th>
+<th>描述详情</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>导购档案对齐</td>
+<td>GuideInfoDataConsistencyProcessInvoke</td>
+<td>导购档案对齐</td>
+</tr>
+</tbody>
+</table>
+<h3 id="场景流程模板配置">场景流程模板配置</h3>
+<ul>
+<li>模板ID：GuideInfoDataConsistencyProcessRouteTemplate</li>
+<li>模板类：com.youzan.cloud.connector.sdk.template.guide.GuideInfoDataConsistencyProcessRouteTemplate</li>
+<li>模板参数类：com.youzan.cloud.connector.sdk.template.guide.GuideInfoDataConsistencyProcessRouteTemplate$TemplateParameters</li>
+</ul>
+<h4 id="配置参数列表">配置参数列表</h4>
+<hr />
+<h5 id="yzstandarduri">yzStandardUri</h5>
+<blockquote>
+<p>导购档案初始化 有赞标准模板</p>
+</blockquote>
+<p><strong>默认值</strong>:
+GuideInfoDataConsistencyProcessYzTemplate-alpha</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GuideInfoDataConsistencyProcessYzTemplate-alpha</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="tripartiteguideinfoqueryuri">tripartiteGuideInfoQueryUri</h5>
+<blockquote>
+<p>外部三方根据标准交换实体 导购档案查询
+的子流程模板EndpointUri或模板ID</p>
+</blockquote>
+<p><strong>参数为必填项</strong></p>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="tripartiteguideinfoupdateuri">tripartiteGuideInfoUpdateUri</h5>
+<blockquote>
+<p>外部三方根据标准交换实体 导购档案更新
+的子流程模板EndpointUri或模板ID</p>
+</blockquote>
+<p><strong>默认值</strong>: bean:emptyProducer?method=process</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>bean:emptyProducer?method=process</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="defaultalignmentstrategy">defaultAlignmentStrategy</h5>
+<blockquote>
+<p>开发者也可自定义对齐策略</p>
+</blockquote>
+<p><strong>默认值</strong>: TRIPARTITE_MERGE</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TRIPARTITE_MERGE</td>
+<td>双方都有数据或都无数据时以三方为准，否则以有数据的一方为准【默认值】</td>
+</tr>
+<tr class="even">
+<td>YOUZAN_FORCE</td>
+<td>强制以有赞为准，null 也会覆盖</td>
+</tr>
+<tr class="odd">
+<td>YOUZAN_MERGE</td>
+<td>双方都有数据或都无数据时以有赞为准，否则以有数据的一方为准</td>
+</tr>
+<tr class="even">
+<td>YOUZAN_CHANNEL</td>
+<td>双方都有数据或都无数据时以有赞为准，其它以数据链路源头为准（下行以有赞为准、上行以三方为准）</td>
+</tr>
+<tr class="odd">
+<td>TRIPARTITE_FORCE</td>
+<td>强制以三方为准，null 也会覆盖</td>
+</tr>
+<tr class="even">
+<td>TRIPARTITE_CHANNEL</td>
+<td>双方都有数据或都无数据时以三方为准，其它以数据链路源头为准（下行以有赞为准、上行以三方为准）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>

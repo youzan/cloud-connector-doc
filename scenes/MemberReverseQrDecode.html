@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<p>[toc]</p>
+<h2 id="会员二维码逆向解码">会员二维码逆向解码</h2>
+<ul>
+<li><p>标识：MemberReverseQrDecode</p></li>
+<li><p>交换实体：com.youzan.cloud.connector.sdk.core.scrm.MemberBaseExchangeEntity</p>
+<h3 id="场景说明">场景说明</h3>
+<p>会员二维码逆向解码</p>
+<h3 id="场景流程入口">场景流程入口</h3></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>名称</th>
+<th>标识</th>
+<th>描述详情</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>逆向会员解码</td>
+<td>MemberReverseDecodeRest</td>
+<td>逆向会员解码</td>
+</tr>
+</tbody>
+</table>
+<h3 id="场景流程模板配置">场景流程模板配置</h3>
+<ul>
+<li>模板ID：MemberReverseDecodeRouteTemplate</li>
+<li>模板类：com.youzan.cloud.connector.sdk.template.scrm.member.reverse.MemberReverseDecodeRouteTemplate</li>
+<li>模板参数类：com.youzan.cloud.connector.sdk.template.scrm.member.reverse.MemberReverseDecodeRouteTemplate$TemplateParameters</li>
+</ul>
+<h4 id="配置参数列表">配置参数列表</h4>
+<hr />
+<h5 id="yzstandarduri">yzStandardUri</h5>
+<blockquote>
+<p>逆向会员解码</p>
+</blockquote>
+<p><strong>默认值</strong>:
+memberReverseQrDecodeSceneYzTemplate-alpha</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>memberReverseQrDecodeSceneYzTemplate-alpha</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="customusermapping">customUserMapping</h5>
+<blockquote>
+
+</blockquote>
+<p><strong>默认值</strong>:
+bean:userMappingProviderImpl?method=byYzUser</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>bean:userMappingProviderImpl?method=byYzUser</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<p><strong>定制示例</strong>:</p>
+<pre><code>自定义外部用户映射子流程EndpointUri
+或实现{@link com.youzan.cloud.connector.sdk.api.user.UserMappingProvider#byYzUser(com.youzan.cloud.connector.sdk.api.user.model.ByYzUserQryParam)}的组件名</code></pre>
+<hr />
+<h5 id="customusermappingfallback">customUserMappingFallback</h5>
+<blockquote>
+
+</blockquote>
+<p><strong>默认值</strong>: none</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>none</td>
+<td>无业务逻辑处理</td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<p><strong>定制示例</strong>:</p>
+<pre><code>自定义外部用户获取不到时的FallBack策略子流程EndpointUri
+或指定allowNull（允许映射为空）
+或实现{@link UserMappingProvider#byOutUser(com.youzan.cloud.connector.sdk.api.user.model.ByOutUserQryParam)}的组件名</code></pre>

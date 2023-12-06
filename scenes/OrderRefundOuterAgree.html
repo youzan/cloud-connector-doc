@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<p>[toc]</p>
+<h2 id="退款单外部同意">退款单外部同意</h2>
+<ul>
+<li><p>标识：OrderRefundOuterAgree</p></li>
+<li><p>交换实体：com.youzan.cloud.connector.sdk.core.trade.RefundAgreeEntity</p>
+<h3 id="场景说明">场景说明</h3>
+<p>退款单外部同意</p>
+<h3 id="场景流程入口">场景流程入口</h3></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>名称</th>
+<th>标识</th>
+<th>描述详情</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>退款单外部同意API</td>
+<td>OrderRefundOuterAgreeRest</td>
+<td>退款单外部同意API</td>
+</tr>
+</tbody>
+</table>
+<h3 id="场景流程模板配置">场景流程模板配置</h3>
+<ul>
+<li>模板ID：OrderRefundOuterAgreeTemplate</li>
+<li>模板类：com.youzan.cloud.connector.sdk.template.trade.OrderRefundOuterAgreeTemplate</li>
+<li>模板参数类：com.youzan.cloud.connector.sdk.template.trade.OrderRefundOuterAgreeTemplate$TemplateParameters</li>
+</ul>
+<h4 id="配置参数列表">配置参数列表</h4>
+<hr />
+<h5 id="yzrefundorderagreeuri">yzRefundOrderAgreeUri</h5>
+<blockquote>
+<p>有赞同步维权单标准流程模板EndpointUri或模板ID</p>
+</blockquote>
+<p><strong>默认值</strong>: OrderRefundOuterAgreeYzTemplate-alpha</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OrderRefundOuterAgreeYzTemplate-alpha</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="customprefilterpredicate">customPreFilterPredicate</h5>
+<blockquote>
+<p>自定义前置过滤逻辑子流程EndpointUri</p>
+</blockquote>
+<p><strong>默认值</strong>: none</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>none</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5 id="customrefundexpressinfo">customRefundExpressInfo</h5>
+<blockquote>
+<p>自定义卖家快递地址子流程EndpointUri</p>
+</blockquote>
+<p><strong>默认值</strong>: none</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>none</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>bean:expressInfoProviderImpl?method=getYzDefaultRefundAddress</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>
+<hr />
+<h5
+id="customrefundexpressinfofallback">customRefundExpressInfoFallback</h5>
+<blockquote>
+<p>自定义卖家快递地址获取不到时的FallBack策略子流程EndpointUri</p>
+</blockquote>
+<p><strong>默认值</strong>: allowNull</p>
+<table>
+<thead>
+<tr class="header">
+<th>已支持的参数值</th>
+<th>值含义说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>allowNull</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>是否允许自定义实现</strong>: Y</p>

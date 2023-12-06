@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<h2 id="ipaas标准场景开发对接文档">iPaaS标准场景开发对接文档</h2>
+<h3 id="trade">trade</h3>
+<ul>
+<li><p><a href="OrderPush.html">推送订单</a></p></li>
+<li><p><a href="OrderChangedNotify.html">订单状态修改通知推送</a></p></li>
+<li><p><a href="OrderRefundPush.html">退款单推送</a></p></li>
+<li><p><a href="CrmOrderPush.html">CRM外部订单创建</a></p></li>
+<li><p><a href="CrmOrderRefund.html">CRM外部维权单创建</a></p></li>
+<li><p><a href="CrmOrderExchange.html">CRM外部换货</a></p></li>
+<li><p><a
+href="CrmOrderUnequalExchange.html">CRM外部单非等价换货</a></p></li>
+<li><p><a
+href="OrderRefundChangedNotify.html">退款单状态修改通知推送</a></p></li>
+<li><p><a href="OrderRefundOuterAgree.html">退款单外部同意</a></p></li>
+<li><p><a href="OrderRefundOuterRefuse.html">退款单外部拒绝</a></p></li>
+<li><p><a href="OrderRefundSellerActive.html">三方主动退款</a></p></li>
+<li><p><a href="OrderShipReverse.html">外部订单发货同步有赞</a></p></li>
+<li><p><a href="OrderSelfFetchReverse.html">订单自提同步有赞</a></p></li>
+<li><p><a
+href="OrderLogisticsReverse.html">订单同城配送同步有赞</a></p></li>
+<li><p><a
+href="OrderLogisticsStatusReverse.html">订单同城配送状态同步有赞</a></p></li>
+<li><p><a href="OrderQueryReverse.html">外部订单详情查询</a></p></li>
+</ul>
+<h3 id="scrm">scrm</h3>
+<ul>
+<li><p><a href="MemberCreate.html">会员正向创建</a></p></li>
+<li><p><a href="MemberCreateInit.html">会员创建后数据初始化</a></p></li>
+<li><p><a href="MemberUpdate.html">会员正向更新</a></p></li>
+<li><p><a href="MemberQuery.html">会员正向查询</a></p></li>
+<li><p><a href="MemberQrCode.html">会员二维码正向查询</a></p></li>
+<li><p><a href="MemberSourceChange.html">会员归属店铺正向更新</a></p></li>
+<li><p><a href="MemberChangeBind.html">会员正向换绑</a></p></li>
+<li><p><a href="MemberReverseCreate.html">会员逆向创建</a></p></li>
+<li><p><a href="MemberReverseQuery.html">会员逆向查询</a></p></li>
+<li><p><a href="MemberReverseUpdate.html">会员逆向更新</a></p></li>
+<li><p><a
+href="MemberReverseSourceChange.html">会员归属店铺逆向更新</a></p></li>
+<li><p><a
+href="MemberReverseQrDecode.html">会员二维码逆向解码</a></p></li>
+<li><p><a href="LevelQuery.html">等级正向查询</a></p></li>
+<li><p><a href="LevelUpdate.html">等级正向更新</a></p></li>
+<li><p><a href="LevelInit.html">等级初始化</a></p></li>
+<li><p><a href="LevelReverseUpdate.html">等级逆向更新</a></p></li>
+<li><p><a href="PointGet.html">积分正向查询</a></p></li>
+<li><p><a href="PointLogGet.html">积分流水日志正向查询</a></p></li>
+<li><p><a href="PointInit.html">积分正向初始化</a></p></li>
+<li><p><a href="PointIncrease.html">积分正向增加</a></p></li>
+<li><p><a href="PointDecrease.html">积分正向减少</a></p></li>
+<li><p><a href="PointFreeze.html">积分正向冻结</a></p></li>
+<li><p><a href="PointUnfreeze.html">积分正向解冻</a></p></li>
+<li><p><a href="PointConsume.html">积分正向消耗</a></p></li>
+<li><p><a href="PointRevert.html">积分正向回补</a></p></li>
+<li><p><a href="PointReverseQuery.html">积分逆向查询</a></p></li>
+<li><p><a href="PointReverseQueryLog.html">积分逆向查询日志</a></p></li>
+<li><p><a href="PointReverseInit.html">积分逆向初始化</a></p></li>
+<li><p><a href="PointReverseIncrease.html">积分逆向增加</a></p></li>
+<li><p><a href="PointReverseDecrease.html">积分逆向减少</a></p></li>
+<li><p><a href="PointReverseFreeze.html">积分逆向冻结</a></p></li>
+<li><p><a href="PointReverseUnfreeze.html">积分逆向解冻</a></p></li>
+<li><p><a href="PointReverseConsume.html">积分逆向消耗</a></p></li>
+<li><p><a href="PointReverseRevert.html">积分逆向回补</a></p></li>
+<li><p><a href="GrowthInit.html">成长值正向初始化</a></p></li>
+<li><p><a href="GrowthGet.html">成长值正向查询</a></p></li>
+<li><p><a href="GrowthIncrease.html">成长值正向增加</a></p></li>
+<li><p><a href="GrowthDecrease.html">成长值正向减少</a></p></li>
+<li><p><a href="GrowthReverseInit.html">成长值逆向初始化</a></p></li>
+<li><p><a href="GrowthReverseGet.html">成长值逆向查询</a></p></li>
+<li><p><a href="GrowthReverseIncrease.html">成长值逆向增加</a></p></li>
+<li><p><a href="GrowthReverseDecrease.html">成长值逆向减少</a></p></li>
+<li><p><a href="LevelRecalculate.html">等级重算</a></p></li>
+</ul>
+<h3 id="guide">guide</h3>
+<ul>
+<li><p><a href="GuideRelationChange.html">导购客户关系变更</a></p></li>
+<li><p><a
+href="GuideRelationDataConsistencyProcess.html">导购客户关系初始化对齐</a></p></li>
+<li><p><a
+href="OuterGuideRelationChange.html">外部导购客户关系变更</a></p></li>
+<li><p><a
+href="GuideRelationForAccountOpeningChange.html">开卡导购客户关系变更</a></p></li>
+<li><p><a href="GuideInfoUpdate.html">导购档案更新</a></p></li>
+<li><p><a
+href="GuideInfoSyncRelationDataProcess.html">导购关联数据处理</a></p></li>
+<li><p><a
+href="GuideInfoDataConsistencyProcess.html">导购档案初始化对齐</a></p></li>
+<li><p><a href="OuterGuideInfoUpdate.html">外部导购档案更新</a></p></li>
+<li><p><a href="OuterGuideInfoQuery.html">导购档案查询</a></p></li>
+</ul>
+<h3 id="stock">stock</h3>
+<ul>
+<li><p><a
+href="StockPullFromTripartite.html">定时任务拉取三方库存同步</a></p></li>
+<li><p><a href="StockSync.html">库存同步</a></p></li>
+</ul>
+<h3 id="item">item</h3>
+<ul>
+<li><p><a href="OutItemCreate.html">商品创建上行</a></p></li>
+<li><p><a href="OutItemUpdate.html">商品更新上行</a></p></li>
+<li><p><a href="OutItemSync.html">商品同步上行</a></p></li>
+<li><p><a href="ItemDelete.html">商品删除</a></p></li>
+</ul>
+<h3 id="voucher">voucher</h3>
+<ul>
+<li><p><a href="VoucherQuery.html">券列表查询</a></p></li>
+<li><p><a href="VoucherDetailQuery.html">券详情查询</a></p></li>
+<li><p><a href="VoucherVerify.html">券核销</a></p></li>
+<li><p><a href="VoucherRefund.html">券退还</a></p></li>
+<li><p><a href="VoucherRecycle.html">券回收</a></p></li>
+<li><p><a href="VoucherDisuse.html">券禁用</a></p></li>
+<li><p><a href="VoucherSend.html">券发放</a></p></li>
+<li><p><a href="VoucherBatchSend.html">批量券发放</a></p></li>
+<li><p><a
+href="VoucherActivityCreateReverseRest.html">优惠券逆向创建券模板活动REST</a></p></li>
+<li><p><a
+href="VoucherTemplateDetailQuery.html">外部券模版查询</a></p></li>
+<li><p><a
+href="ActivityTemplateSyncReverse.html">外部券模版同步到有赞</a></p></li>
+<li><p><a href="VoucherVerifyReverse.html">外部券核销至有赞</a></p></li>
+<li><p><a href="VoucherRefundReverse.html">外部券退券至有赞</a></p></li>
+<li><p><a href="VoucherRecycleReverse.html">外部券回收至有赞</a></p></li>
+<li><p><a href="VoucherDisuseReverse.html">外部券禁用至有赞</a></p></li>
+<li><p><a href="VoucherSendReverse.html">优惠券发放逆向</a></p></li>
+<li><p><a
+href="VoucherOperateReverse.html">外部券操作同步至有赞</a></p></li>
+<li><p><a href="ActivityUpdate.html">有赞券模版修改</a></p></li>
+<li><p><a
+href="ActivityTemplateCreate.html">有赞券模版同步到三方</a></p></li>
+<li><p><a href="AvailableVoucherQuery.html">可用券查询</a></p></li>
+<li><p><a
+href="VoucherFrozenReverseRest.html">优惠券逆向冻结REST接口</a></p></li>
+<li><p><a
+href="VoucherPreVerifyReverseRest.html">优惠券逆向预核销REST接口</a></p></li>
+<li><p><a
+href="VoucherQueryDiscountReverseRest.html">优惠券逆向查询优惠折扣信息REST接口</a></p></li>
+<li><p><a
+href="VoucherQueryListReverseRest.html">优惠券逆向查询券列表REST接口</a></p></li>
+<li><p><a
+href="VoucherUnFrozenReverseRest.html">优惠券逆向解冻优惠券REST接口</a></p></li>
+<li><p><a
+href="VoucherActivityDeleteReverseRest.html">优惠券模板逆向删除REST接口</a></p></li>
+<li><p><a
+href="VoucherRefundReverseRest.html">优惠券逆向退还REST接口</a></p></li>
+<li><p><a
+href="VoucherVerifyReverseRest.html">优惠券逆向核销REST接口</a></p></li>
+<li><p><a
+href="VoucherRecycleReverseRest.html">优惠券逆向回收REST接口</a></p></li>
+<li><p><a
+href="VoucherOnlySendReverseRest.html">优惠券发放逆向接口调用(仅有赞发券)</a></p></li>
+<li><p><a
+href="VoucherReverseVerifyRefund.html">有赞券逆向退券REST</a></p></li>
+<li><p><a href="VoucherHandSel.html">优惠券正向转赠</a></p></li>
+<li><p><a href=".html"></a></p></li>
+</ul>
+<h3 id="valuecard">valuecard</h3>
+<ul>
+<li><p><a href="ValueCardListQuery.html">储值卡列表</a></p></li>
+<li><p><a href="ValueCardDetailQuery.html">储值卡详情查询</a></p></li>
+<li><p><a href="ValueCardRecordQuery.html">储值卡交易明细查询</a></p></li>
+<li><p><a
+href="ValueCardRechargeRuleQuery.html">储值卡充值规则查询</a></p></li>
+<li><p><a href="ValueCardPay.html">储值卡支付</a></p></li>
+<li><p><a href="ValueCardPayQuery.html">储值卡支付结果查询</a></p></li>
+<li><p><a href="ValueCardRefund.html">储值卡退款</a></p></li>
+<li><p><a href="ValueCardRefundQuery.html">储值卡退款结果查询</a></p></li>
+<li><p><a href="ValueCardRecharge.html">储值卡充值</a></p></li>
+<li><p><a
+href="ValueCardRechargeQuery.html">储值卡充值结果查询</a></p></li>
+<li><p><a
+href="ValueCardRechargeBonus.html">储值卡充值发放赠送金</a></p></li>
+<li><p><a href="ValueCardExchange.html">储值兑换</a></p></li>
+<li><p><a href="ValueCardGive.html">储值卡赠送</a></p></li>
+<li><p><a href="ValueCardCancelGive.html">储值卡取消赠送</a></p></li>
+<li><p><a href="ValueCardTake.html">储值卡领取</a></p></li>
+<li><p><a href="ValueCardActivate.html">储值卡激活</a></p></li>
+<li><p><a
+href="ValueCardFlowDetailReverse.html">外部储值流水回写至有赞</a></p></li>
+<li><p><a
+href="ValueCardUserFlowFailed.html">用户储值流水失败处理</a></p></li>
+<li><p><a
+href="ValueCardFixFlowDetail.html">修复用户B端储值流水</a></p></li>
+<li><p><a href="ValueCardQueryReverse.html">储值卡查询逆向</a></p></li>
+<li><p><a href="ValueCardPayReverse.html">储值卡支付逆向</a></p></li>
+<li><p><a
+href="ValueCardPayQueryReverse.html">储值卡支付结果查询逆向</a></p></li>
+<li><p><a href="ValueCardRefundReverse.html">储值卡退款逆向</a></p></li>
+<li><p><a
+href="ValueCardRefundQueryReverse.html">储值卡退款结果查询逆向</a></p></li>
+<li><p><a href="ValueCardDetailBuyCenter.html">储值卡购卡中心</a></p></li>
+<li><p><a href=".html"></a></p></li>
+</ul>
